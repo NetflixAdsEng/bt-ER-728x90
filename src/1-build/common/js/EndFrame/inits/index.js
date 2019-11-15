@@ -93,7 +93,6 @@ function sideBySideCtaLogoInit(T) {
   T.cta.setAttribute("width", 107);
   T.cta.setAttribute("max-width", 130);
   T.cta.setAttribute("height", 30);
-  T.cta.setAttribute("stretch-origin", "right");
   T.appendChild(T.cta);
 }
 
@@ -109,7 +108,8 @@ function stackedCtaLogoInit(T) {
   T.cta.setAttribute("arrow", "");
   T.cta.setAttribute("border", "");
   T.cta.setAttribute("width", 96);
+  T.cta.setAttribute("max-width", 96);
   T.cta.setAttribute("height", 25);
-  T.cta.setAttribute("stretch-origin", "right");
+  T.cta.setAttribute("horizontal-pad", "9%");
   T.appendChild(T.cta);
 }
