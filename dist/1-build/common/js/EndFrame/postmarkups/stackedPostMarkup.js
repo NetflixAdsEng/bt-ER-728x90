@@ -13,7 +13,7 @@ import {
   UISvg
 } from "ad-ui";
 import { ObjectUtils } from "ad-utils";
-import { titleTreatmentLayout } from "./shared.js";
+import { titleTreatmentLayout, stackedBrandingLockup } from "./shared.js";
 
 export default function stackedPostMarkup() {
   let T = View.endFrame;
@@ -32,29 +32,17 @@ export default function stackedPostMarkup() {
     }
   });
 
-  // cta
-  T.cta.resize();
-  Align.set(T.cta, {
-    x: {
-      type: Align.RIGHT,
-      offset: -16
+  stackedBrandingLockup(T, {
+    brandingLockupOffset: 8,
+    brandingLockupElemXAlign: Align.CENTER,
+    brandingLockupAlign: {
+      y: Align.CENTER,
+      x: {
+        type: Align.RIGHT,
+        offset: -12
+      }
     },
-    y: {
-      type: Align.TOP,
-      offset: 14
-    }
-  });
-
-  // logo
-  Align.set(T.netflixLogo, {
-    x: {
-      type: Align.RIGHT,
-      offset: -16
-    },
-    y: {
-      type: Align.TOP,
-      offset: 52
-    }
+    tuneInFontSize: 12
   });
 
   // ratings bug

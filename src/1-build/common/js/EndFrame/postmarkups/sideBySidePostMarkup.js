@@ -104,7 +104,7 @@ export default function sideBySidePostMarkup() {
         type: Align.TOP,
         outer: true,
         against: T.brandingLockup,
-        offset: -8
+        offset: -12
       }
     });
     T.removeChild(T.ftm);

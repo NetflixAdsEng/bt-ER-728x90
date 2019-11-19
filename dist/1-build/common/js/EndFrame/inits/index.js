@@ -90,6 +90,7 @@ function sideBySideCtaLogoInit(T) {
   T.cta.setAttribute("data-dynamic-key", "CTA");
   T.cta.setAttribute("arrow", "");
   T.cta.setAttribute("border", "");
+  T.cta.setAttribute("font-size", 11);
   T.cta.setAttribute("width", 107);
   T.cta.setAttribute("max-width", 130);
   T.cta.setAttribute("height", 30);
@@ -99,7 +100,7 @@ function sideBySideCtaLogoInit(T) {
 function stackedCtaLogoInit(T) {
   // logo
   T.netflixLogo = document.createElement("netflix-brand-logo");
-  T.netflixLogo.setAttribute("width", 96);
+  T.netflixLogo.setAttribute("width", 76);
   T.appendChild(T.netflixLogo);
 
   // cta
@@ -107,9 +108,10 @@ function stackedCtaLogoInit(T) {
   T.cta.setAttribute("data-dynamic-key", "CTA");
   T.cta.setAttribute("arrow", "");
   T.cta.setAttribute("border", "");
-  T.cta.setAttribute("width", 96);
-  T.cta.setAttribute("max-width", 96);
-  T.cta.setAttribute("height", 25);
+  T.cta.setAttribute("width", 76);
+  T.cta.setAttribute("max-width", 76);
+  T.cta.setAttribute("height", 19);
+  T.cta.setAttribute("min-font-size", 7);
   T.cta.setAttribute("horizontal-pad", "9%");
   T.appendChild(T.cta);
 }
