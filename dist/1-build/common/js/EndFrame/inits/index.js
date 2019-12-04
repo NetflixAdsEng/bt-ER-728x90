@@ -48,6 +48,10 @@ function baseInit(T, { ctaLogoInit = sideBySideCtaLogoInit }) {
   // title treatment
   T.tt = document.createElement("netflix-img");
   T.tt.setAttribute("data-dynamic-key", "Title_Treatment");
+  // resize TTs if retina setting set
+  if (adData.retinaTT) {
+    T.tt.setAttribute("width", adParams.adWidth);
+  }
   T.appendChild(T.tt);
 
   // free trial messaging
